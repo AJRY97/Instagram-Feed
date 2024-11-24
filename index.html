@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <title>Instagram</title>
+  <script src="https://kit.fontawesome.com/1ae03129f9.js" crossorigin="anonymous"></script>
+</head>
+<!-- ALAN ROJAS -->
+
+<body>
+  <nav class="navbar bg-body-tertiary py-3">
+    <div class="container-fluid">
+
+      <a class="navbar-brand" href="#">
+        <i class="fa-brands fa-instagram "></i>
+        <strong>INSTAGRAM</strong>
+      </a>
+      <!-- Button trigger modal -->
+      <div class="d-flex align-right justify-content-end">
+        <button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Create a new post
+        </button>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            <i class="fa-solid fa-gear"></i>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+
+          </ul>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="mb-3">
+                <label for="message-text" class="col-form-label">Caption:</label>
+                <textarea class="form-control" id="message-text"
+                  placeholder="Add the caption of your post here"></textarea>
+                <div class="row p-2">
+                  <button type="button" class="col-1 border rounded p-1 m-1 btn bg-light"><i
+                      class="fa-solid fa-camera"></i></button>
+                  <button type="button" class="col-1 border rounded p-1 m-1 btn bg-light"><i
+                      class="fa-solid fa-location-dot"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-success">Publish</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <ul class="nav nav-pills justify-content-center" id="myTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active bg-transparent mt-2 border-0 p-0" id="home-tab" data-bs-toggle="tab"
+          data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">
+          <i class="fa-solid fa-table-cells text-primary fs-4"></i>
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link bg-transparent ms-2 mt-2 border-0 p-0" id="profile-tab" data-bs-toggle="tab"
+          data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">
+          <i class="fa-solid fa-square text-secondary fs-4"></i>
+        </button>
+      </li>
+    </ul>    
+
+
+    <div class="tab-content" id="myTabContent">
+      <!-- 3 imagenes -->
+      <div class="tab-pane fade show active overflow-hidden" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <div class="row">
+          <div class="col-4 p-1">
+            <div class="ratio ratio-4x3">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Kukulk%C3%A1n_rodeada_de_azul..JPG"
+                class="img-fluid" alt="">
+            </div>
+          </div>
+          <div class="col-4 p-1">
+            <div class="ratio ratio-4x3">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Colosseo_2020.jpg" class="img-fluid" alt="">
+            </div>
+          </div>
+          <div class="col-4 p-1">
+            <div class="ratio ratio-4x3">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/2/23/The_Great_Wall_of_China_at_Jinshanling-edit.jpg"
+                class="img-fluid" alt="">
+            </div>
+          </div>
+          <div class="col-4 p-1">
+            <div class="ratio ratio-4x3">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Machu_Picchu%2C_Peru_%282018%29.jpg"
+                class="img-fluid" alt="">
+            </div>
+          </div>
+          <div class="col-4 p-1">
+            <div class="ratio ratio-4x3">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Taj_Mahal_%28Edited%29.jpeg"
+                class="img-fluid" alt="">
+            </div>
+          </div>
+          <div class="col-4 p-1">
+            <div class="ratio ratio-4x3">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/0/04/Vue_a%C3%A9rienne_du_domaine_de_Versailles_par_ToucanWings_-_Creative_Commons_By_Sa_3.0_-_083.jpg"
+                class="img-fluid" alt="">
+            </div>
+          </div>
+          <div class="col-4 p-1">
+            <div class="ratio ratio-4x3">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/d/de/Dawn_Charles_V_Palace_Alhambra_Granada_Andalusia_Spain.jpg"
+                class="img-fluid" alt="">
+            </div>
+          </div>
+          <div class="col-4 p-1">
+            <div class="ratio ratio-4x3">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Sydney_Australia._%2821339175489%29.jpg"
+                class="img-fluid" alt="">
+            </div>
+          </div>
+          <div class="col-4 p-1">
+            <div class="ratio ratio-4x3">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Aachen_Germany_Imperial-Cathedral-01.jpg"
+                class="img-fluid" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 1 imagen/post -->
+      <div class="tab-pane fade overflow-hidden" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        <!-- Post 1 -->
+        <div class="card w-50 mx-auto mt-4 shadow">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <p class="mb-0 fs-4"><strong>Chichén Itzá</strong></p>
+            <small class="ms-auto">08/26</small>
+          </div>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Kukulk%C3%A1n_rodeada_de_azul..JPG" alt=""
+            class="img-fluid w-100">
+          <div class="card-body">
+            <p class="mb-1"><strong>204 Likes</strong></p>
+            <p class="small mb-0">Chichén Itzá, majestuosa ciudad maya, destaca por su impresionante arquitectura.</p>
+          </div>
+        </div>
+        <!-- Post 2 -->
+         <div class="card w-50 mx-auto mt-4 shadow">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <p class="mb-0 fs-4"><strong>Segunda Maravilla</strong></p>
+            <small class="small mb-0">04/09</small>
+          </div>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Colosseo_2020.jpg" class="img-fluid w-100" alt="">
+          <div class="card-body">
+            <p class="mb-1"><strong>26985 Likes</strong></p>
+            <p class="small mb-0">Segunda Maravilla en el feed</p>
+          </div>
+         </div>
+         <!-- Post 3  -->
+          <div class="card w-50 mx-auto mt-4 shadow">
+            <div class="card-header d-flex justify-content-between align-items-center">
+              <p class="mb-0 fs-4"><strong>Tercera Maravilla</strong></p>
+              <small class="small mb-0">06/09</small>
+            </div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/23/The_Great_Wall_of_China_at_Jinshanling-edit.jpg" class="img-fluid w-100" alt="">
+            <div class="card-body">
+              <p class="mb-1"><strong>983 Likes</strong></p>
+              <p class="small mb-0">Tercera Maravilla</p>
+            </div>
+          </div>
+          <!-- Post 4 -->
+           <div class="card w-50 mx-auto mt-4 shadow">
+            <div class="card-header d-flex justify-content-between align-items-center">
+              <p class="mb-0 fs-4"><strong>Cuarta Maravilla</strong></p>
+              <p class="small mb-0">06/12</p>
+            </div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/Machu_Picchu%2C_Peru_%282018%29.jpg" class="img-fluid w-100" alt="">
+            <div class="card-body">
+              <p class="mb-1"><strong>873 Likes</strong></p>
+              <p class="mb-0 small">Cuarta gran Maravilla del feed</p>
+            </div>
+          </div>
+          <div class="card mx-auto w-50 mt-4 shadow">
+            <div class="card-header d-flex justify-content-between align-items-center">
+              <p class="mb-0 fs-4"><strong>Quinta Maravilla</strong></p>
+              <p class="small mb-0"> 11/09</p>
+            </div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Vue_a%C3%A9rienne_du_domaine_de_Versailles_par_ToucanWings_-_Creative_Commons_By_Sa_3.0_-_083.jpg" class="img-fluid w-100" alt="">
+            <div class="card-body">
+              <p class="mb-1"><strong>128 Likes</strong></p>
+              <p class="mb-0 small"> Quinta Maravilla</p>
+            </div>
+          </div>
+
+
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
